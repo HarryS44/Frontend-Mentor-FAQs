@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Work Sans", sans-serif;
+}
+
+.standard-purple {
+  height: 100vh;
+  width: 100%;
+  background-color: #f9f0ff;
+}
+
+.purple-svg {
+  background-image: url("assets/images/background-pattern-desktop.svg");
+  background-size: cover;
+  background-position: center;
+  height: 40%;
+  width: 100%;
+}
+
+.faq {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-height: 75%;
+  max-width: 35%;
+  border-radius: 2%;
+  margin: auto;
+  background-color: #fff;
+}
+
+.big-faq {
+  display: flex;
+  justify-content: left;
+  margin: 1.5rem 0 0 2rem;
+}
+
+.big-faq > h1 {
+  font-weight: 700;
+  font-size: 40px;
+  margin-left: 1rem;
+}
+
+.purple-star {
+  position: relative;
+  margin-top: 0.8%;
+}
+
+.question-section {
+  margin-top: 2.5rem;
+}
+
+.plus:hover{
+  opacity: 50%;
+}
+
+.question {
+  display: flex;
+  align-items: center; 
+  justify-content: space-between; 
+  max-height: fit-content;
+  width: 90%;
+  margin: 2rem auto 1rem;
+}
+
+h4 {
+  margin-top: 1.2%;
+  font-weight: 600;
+  margin-right: auto; 
+}
+
+.hidden{
+  display: none;
+  width: 90%;
+  color: #8c6991;
+  width: 90%;
+  margin: auto auto 1rem;
+  overflow: scroll;
+  max-height: fit-content;
+}
+
+@media screen and (min-width: 375px) and (max-width: 700px) {
+  .faq {
+    max-height: 100%;
+    max-width: 95%;
+    left: 50%; 
+  }
+
+  .big-faq > h1{
+    font-size: 2rem;
+  }
+
+  .big-faq{
+    margin-left: 0.2rem;
+  }
+
+  .purple-star{
+    height: 30px;
+    width: 30px;
+  }
+}
